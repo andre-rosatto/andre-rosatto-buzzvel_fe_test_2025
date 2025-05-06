@@ -3,6 +3,9 @@
 :root {
   --bg-color: white;
   --primary-color: #0f172a;
+  --secondary-color: #facc15;
+  --tertiary-color: #ea580c;
+  --link-color: #2563eb;
   --primary-font: Roboto, Arial, Helvetica, sans-serif;
   --content-padding-h: 5rem;
 }
