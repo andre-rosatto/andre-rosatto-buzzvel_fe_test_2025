@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  padding: 1.5rem var(--content-padding-h);
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.logo {
+  height: 35px;
+  margin-right: 3rem;
+}
+
+.menuContainer {
+  display: flex;
+  width: 100%;
+}
+
+.collapsableMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navMenu {
+  display: flex;
+  gap: 4rem;
+  padding-left: 0;
+}
+
+.navMenuItem {
+  list-style: none;
+}
+
+.expandIcon {
+  margin-left: 0.5rem;
+}
+
+.logOptionsContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 0.75rem 0.5rem;
+}
+
+.signUpButton {
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    margin-right: 1rem;
+  }
+
+  .navMenu {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .container {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .menuContainer {
+    background-image: url('/assets/menu.svg');
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: top right;
+    flex-direction: column;
+    position: relative;
+    width: 1.5rem;
+    min-height: 1.5rem;
+    overflow: visible;
+    align-items: flex-end;
+  }
+
+  .collapsableMenu {
+    position: absolute;
+    width: 10rem;
+    transform: scaleY(0);
+    transform-origin: top right;
+    top: 1.5rem;
+    overflow: hidden;
+    flex-direction: column;
+    transition: all 0.25s ease-in-out;
+    border-radius: 0.5rem;
+  }
+
+  .menuExpanded {
+    transform: scaleY(100%);
+  }
+
+  .navMenu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navMenuItem {
+    width: 100%;
+  }
+
+  .link {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background-color: #eee;
+    padding: 0.5rem 0;
+  }
+
+  .logOptionsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    border-top: 2px solid var(--primary-color);
+  }
+
+  .signUpButton {
+    border: none;
+  }
+}
