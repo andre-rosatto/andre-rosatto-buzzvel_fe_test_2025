@@ -15,15 +15,14 @@ body {
   margin: 0;
 }
 
-.app {
-  width: 100vw;
-  max-width: 1440px;
-  margin: auto;
-}
-
 @media screen and (max-width: 1110px) {
   :root {
     --content-padding-h: 2rem;
   }
 }
 
+@media screen and (max-width: 875px) {
+  :root {
+    --content-padding-h: 1rem;
+  }
+}
