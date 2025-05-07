@@ -55,7 +55,6 @@
 .link {
   display: flex;
   align-items: center;
-  padding: 1rem 0.5rem;
   text-decoration: none;
   color: var(--link-color);
 }

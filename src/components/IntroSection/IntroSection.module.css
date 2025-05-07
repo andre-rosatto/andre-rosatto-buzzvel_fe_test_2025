@@ -11,6 +11,7 @@
   width: 100%;
   display: flex;
   padding: 5rem var(--content-padding-h);
+  align-items: center;
 }
 
 .textContainer {

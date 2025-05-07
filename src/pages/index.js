@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import IntroSection from '@/components/IntroSection';
 import ScreenSection from '@/components/ScreenSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import MeetSection from '@/components/MeetSection';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -32,10 +33,9 @@ export default function Home() {
         <Navbar />
         <main className={styles.contentContainer}>
           <IntroSection />
-
           <ScreenSection />
-
           <TestimonialsSection />
+          <MeetSection />
         </main>
         <Footer />
       </div>
