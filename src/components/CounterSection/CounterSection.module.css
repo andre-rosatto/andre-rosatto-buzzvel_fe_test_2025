@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem var(--content-padding-h);
+  font-size: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 875px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 3rem var(--content-padding-h);
+    gap: 3rem;
+  }
+}
