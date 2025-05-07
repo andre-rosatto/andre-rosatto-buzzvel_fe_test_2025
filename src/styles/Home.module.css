@@ -38,21 +38,6 @@
   font-weight: 400;
 }
 
-.sectionButtonsContainer {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-.sectionButton {
-  background-color: var(--tertiary-color);
-  color: var(--bg-color);
-  border-radius: 0.5rem;
-  padding: 1.25rem 3rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 .sectionLink {
   display: flex;
   align-items: center;
@@ -64,95 +49,6 @@
 .sectionLinkText {
   padding: 0;
   font-weight: 500;
-}
-
-.sectionFooter {
-  color: #475569;
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 3rem;
-  font-size: 1rem;
-}
-
-.sectionFooterText {
-  line-height: 140%;
-}
-
-.sectionFooterIcons {
-  display: flex;
-  gap: 3rem;
-}
-
-.sectionScreen {
-}
-
-.sectionStudentsImage {
-  position: relative;
-  width: 624px;
-  min-width: 624px;
-  height: 544px;
-}
-
-.sectionScreenIntroText {
-  display: none;
-  line-height: 140%;
-}
-
-.tickListContainer {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.tickListItem {
-  font-size: 1.25rem;
-  line-height: 180%;
-  list-style: none;
-  display: flex;
-  gap: 0.5rem;
-}
-
-.tickListItemTick {
-  padding-top: 0.4rem;
-}
-
-.sectionParticlesContainer {
-  position: absolute;
-  width: 291px;
-  min-width: 291px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transform: translateX(-70%);
-}
-
-.sectionScreenImage {
-  position: relative;
-  width: 656px;
-  min-width: 656px;
-}
-
-.sectionScreenImageContainer {
-  position: absolute;
-  width: 600px;
-  height: 391px;
-  right: 0;
-  top: 0;
-}
-
-.sectionBlob {
-  transform: translateX(-5rem);
-  padding: 2.5rem 0;
-}
-
-.sectionCardsContainer {
-  display: flex;
-  gap: 1rem;
-  position: absolute;
-  bottom: 0;
-  left: 4%;
 }
 
 .sectionTestimonial {
@@ -221,10 +117,6 @@
     align-items: center;
   }
 
-  .sectionParticlesContainer {
-    transform: translateX(15%) translateY(-35%);
-  }
-
   .testimonial {
     flex-direction: column;
   }
@@ -241,12 +133,6 @@
     gap: 2rem;
   }
 
-  .sectionStudentsImage {
-    width: 361px;
-    min-width: 361px;
-    height: 329px;
-  }
-
   .sectionTextContainer {
     gap: 2rem;
   }
@@ -259,60 +145,8 @@
     font-size: 2.5rem;
   }
 
-  .sectionButtonsContainer {
-    gap: 1.5rem;
-  }
-
-  .sectionButton {
-    padding: 0.75rem 1.75rem;
-    font-weight: 500;
-  }
-
   .sectionLinkText {
     font-weight: 500;
-  }
-
-  .sectionFooter {
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 0;
-    align-items: flex-start;
-  }
-
-  .sectionFooterIcons {
-    gap: 1.5rem;
-  }
-
-  .sectionScreen {
-    margin-bottom: 5rem;
-  }
-
-  .sectionScreenIntroText {
-    display: block;
-  }
-
-  .tickListContainer {
-    gap: 1rem;
-  }
-
-  .sectionScreenImage {
-    width: 100%;
-    min-width: 100%;
-  }
-
-  .sectionScreenImageContainer {
-    width: 100%;
-    transform: translateY(-20%);
-  }
-
-  .sectionBlob {
-    padding: 0;
-    width: 75%;
-    height: 100%;
-  }
-
-  .sectionCardsContainer {
-    bottom: -25%;
   }
 
   .testimonialPipsContainer {
