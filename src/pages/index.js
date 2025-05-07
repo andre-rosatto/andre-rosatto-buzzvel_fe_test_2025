@@ -12,6 +12,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import JoinSection from '@/components/JoinSection';
 import DemoSection from '@/components/DemoSection';
+import Fader from '@/components/Fader';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -37,15 +38,33 @@ export default function Home() {
       >
         <Navbar />
         <main className={styles.contentContainer}>
-          <IntroSection />
-          <ScreenSection />
-          <QuotesSection />
-          <MeetSection />
-          <CounterSection />
-          <TestimonialsSection />
-          <FeaturesSection />
-          <JoinSection />
-          <DemoSection />
+          <Fader>
+            <IntroSection />
+          </Fader>
+          <Fader from='left'>
+            <ScreenSection />
+          </Fader>
+          <Fader>
+            <QuotesSection />
+          </Fader>
+          <Fader from='left'>
+            <MeetSection />
+          </Fader>
+          <Fader>
+            <CounterSection />
+          </Fader>
+          <Fader from='left'>
+            <TestimonialsSection />
+          </Fader>
+          <Fader>
+            <FeaturesSection />
+          </Fader>
+          <Fader from='left'>
+            <JoinSection />
+          </Fader>
+          <Fader>
+            <DemoSection />
+          </Fader>
         </main>
         <Footer />
       </div>
