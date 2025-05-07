@@ -52,6 +52,16 @@
   border-radius: 0.5rem;
   padding: 0.75rem 1.75rem;
   background-color: transparent;
+  transition: all 0.2s;
+}
+
+.signUpButton:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.signUpButton:active {
+  transform: scale(0.95);
 }
 
 @media screen and (max-width: 1000px) {
