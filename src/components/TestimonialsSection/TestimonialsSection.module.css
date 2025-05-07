@@ -1,20 +1,19 @@
 .container {
   display: flex;
   gap: 5rem;
-  font-size: 1.5rem;
-  padding: 5rem var(--content-padding-h);
-  align-items: center;
+  justify-content: center;
   width: 100%;
   background-color: var(--secondary-color);
 }
 
 .testimonial {
   display: flex;
+  padding: 5rem var(--content-padding-h);
+  font-size: 1.5rem;
   align-items: center;
   gap: 1rem;
   width: 100%;
   max-width: 1440px;
-  margin: auto;
 }
 
 .arrow {
@@ -74,7 +73,7 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .container {
+  .testimonial {
     flex-direction: column;
     align-items: center;
   }
@@ -85,7 +84,7 @@
 }
 
 @media screen and (max-width: 875px) {
-  .container {
+  .testimonial {
     font-size: 1rem;
     padding: 3rem var(--content-padding-h);
     gap: 2rem;

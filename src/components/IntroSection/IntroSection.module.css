@@ -1,11 +1,16 @@
 .container {
   display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.content {
   gap: 5rem;
   font-size: 1.5rem;
-  padding: 5rem var(--content-padding-h);
-  align-items: center;
   max-width: 1440px;
   width: 100%;
+  display: flex;
+  padding: 5rem var(--content-padding-h);
 }
 
 .textContainer {
@@ -81,17 +86,17 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .container {
+  .content {
     flex-direction: column;
     align-items: center;
   }
 }
 
 @media screen and (max-width: 875px) {
-  .container {
-    font-size: 1rem;
-    padding: 3rem var(--content-padding-h);
+  .content {
     gap: 2rem;
+    padding: 3rem var(--content-padding-h);
+    font-size: 1rem;
   }
 
   .textContainer {
