@@ -4,14 +4,14 @@ import styles from '@/styles/Home.module.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import IntroSection from '@/components/IntroSection';
-import ScreenSection from '@/components/ScreenSection';
+import AppSection from '@/components/AppSection';
 import QuotesSection from '@/components/QuotesSection';
 import MeetSection from '@/components/MeetSection';
 import CounterSection from '@/components/CounterSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import JoinSection from '@/components/JoinSection';
-import DemoSection from '@/components/DemoSection';
+import MessageSection from '@/components/MessageSection';
 import Fader from '@/components/Fader';
 
 const geistSans = Geist({
@@ -45,7 +45,7 @@ export default function Home() {
             <IntroSection />
           </Fader>
           <Fader from='left'>
-            <ScreenSection />
+            <AppSection />
           </Fader>
           <Fader>
             <QuotesSection />
@@ -66,7 +66,7 @@ export default function Home() {
             <JoinSection />
           </Fader>
           <Fader>
-            <DemoSection />
+            <MessageSection />
           </Fader>
         </main>
         <Footer />

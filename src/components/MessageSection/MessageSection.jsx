@@ -1,6 +1,6 @@
-import styles from './DemoSection.module.css';
+import styles from './MessageSection.module.css';
 
-export default function DemoSection() {
+export default function MessageSection() {
   return (
     <section className={styles.container}>
       <div className={styles.content}>

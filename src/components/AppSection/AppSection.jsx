@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import UnderlinedText from '../UnderlinedText';
-import styles from './ScreenSection.module.css';
+import styles from './AppSection.module.css';
 import Card from '../Card';
 
-export default function ScreenSection() {
+export default function AppSection() {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
