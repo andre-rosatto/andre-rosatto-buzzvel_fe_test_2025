@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  width: 412px;
+  height: 305px;
+  box-sizing: border-box;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.07), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  font-size: 1.125rem;
+  flex-shrink: 0;
+}
+
+.text {
+  line-height: 160%;
+}
+
+.authorContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.authorImage {
+  object-fit: cover;
+  border-radius: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.authorText {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorOccupation {
+  font-size: 1rem;
+  color: #475569;
+}
+
+@media screen and (max-width: 875px) {
+  .container {
+    width: 309px;
+    height: 323px;
+  }
+}

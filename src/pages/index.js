@@ -8,6 +8,7 @@ import ScreenSection from '@/components/ScreenSection';
 import QuotesSection from '@/components/QuotesSection';
 import MeetSection from '@/components/MeetSection';
 import CounterSection from '@/components/CounterSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -38,6 +39,7 @@ export default function Home() {
           <QuotesSection />
           <MeetSection />
           <CounterSection />
+          <TestimonialsSection />
         </main>
         <Footer />
       </div>

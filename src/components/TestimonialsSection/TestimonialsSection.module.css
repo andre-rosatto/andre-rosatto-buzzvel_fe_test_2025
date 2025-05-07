@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  gap: 5rem;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem var(--content-padding-h);
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 110%;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.button {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.slider {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 875px) {
+  .content {
+    gap: 2rem;
+    padding: 3rem var(--content-padding-h);
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .buttonsContainer {
+    display: none;
+  }
+}
