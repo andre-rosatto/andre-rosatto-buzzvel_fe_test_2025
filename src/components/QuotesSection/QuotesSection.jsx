@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import styles from './TestimonialsSection.module.css';
+import styles from './QuotesSection.module.css';
 
-export default function TestimonialsSection() {
+export default function QuotesSection() {
   return (
     <section className={styles.container}>
-      <div className={styles.testimonial}>
+      <div className={styles.content}>
         <svg
           width='48'
           height='48'

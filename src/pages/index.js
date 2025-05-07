@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import IntroSection from '@/components/IntroSection';
 import ScreenSection from '@/components/ScreenSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
+import QuotesSection from '@/components/QuotesSection';
 import MeetSection from '@/components/MeetSection';
 import CounterSection from '@/components/CounterSection';
 
@@ -35,7 +35,7 @@ export default function Home() {
         <main className={styles.contentContainer}>
           <IntroSection />
           <ScreenSection />
-          <TestimonialsSection />
+          <QuotesSection />
           <MeetSection />
           <CounterSection />
         </main>

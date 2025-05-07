@@ -6,7 +6,7 @@
   background-color: var(--secondary-color);
 }
 
-.testimonial {
+.content {
   display: flex;
   padding: 5rem var(--content-padding-h);
   font-size: 1.5rem;
@@ -73,7 +73,7 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .testimonial {
+  .content {
     flex-direction: column;
     align-items: center;
   }
@@ -84,7 +84,7 @@
 }
 
 @media screen and (max-width: 875px) {
-  .testimonial {
+  .content {
     font-size: 1rem;
     padding: 3rem var(--content-padding-h);
     gap: 2rem;
