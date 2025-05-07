@@ -31,7 +31,7 @@ export default function Home() {
         <title>uteach</title>
         <meta
           name='description'
-          content="Nextjs website created for uteach as part of Buzzvel's front-end technical challenge 2025"
+          content="Nextjs website created as a Single Page Application for the education company uteach as part of Buzzvel's front-end technical challenge 2025"
         />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
