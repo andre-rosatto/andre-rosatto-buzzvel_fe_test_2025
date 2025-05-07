@@ -4,6 +4,8 @@
   font-size: 1.5rem;
   padding: 5rem var(--content-padding-h);
   align-items: center;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .textContainer {
