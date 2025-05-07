@@ -5,6 +5,7 @@
   padding: 3rem var(--content-padding-h);
   color: var(--bg-color);
   box-sizing: border-box;
+  align-items: center;
 }
 
 .content {
@@ -13,6 +14,7 @@
   border-bottom: 1px solid #334155;
   padding-bottom: 3rem;
   gap: 3rem;
+  width: 100%;
 }
 
 .columnsContainer {
@@ -52,6 +54,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 1.5rem;
+  width: 100%;
 }
 
 .copyrightLinksContainer {
@@ -72,6 +75,10 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.currencySymbol {
+  display: block;
 }
 
 @media screen and (max-width: 1000px) {
@@ -106,6 +113,10 @@
     width: 100%;
     justify-content: space-between;
     gap: 0;
+  }
+
+  .currencySymbol {
+    display: none;
   }
 }
 
