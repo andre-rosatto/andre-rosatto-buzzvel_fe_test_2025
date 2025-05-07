@@ -11,6 +11,10 @@
   gap: 1rem;
 }
 
+.fixedSize {
+  flex-shrink: 0;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -64,6 +68,10 @@
   .container {
     width: 160px;
     gap: 0.5rem;
+  }
+
+  .fixedSize {
+    width: 200px;
   }
 
   .badge {

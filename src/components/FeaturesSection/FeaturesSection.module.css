@@ -5,7 +5,7 @@
 }
 
 .content {
-  gap: 2rem;
+  gap: 5rem;
   font-size: 1.5rem;
   max-width: 1440px;
   width: 100%;
@@ -20,17 +20,6 @@
   gap: 2rem;
 }
 
-.titleContainer {
-  position: relative;
-}
-
-.titleDecoration {
-  position: absolute;
-  left: 24rem;
-  top: -3rem;
-  z-index: -1;
-}
-
 .title {
   font-size: 3.5rem;
   font-weight: 800;
@@ -40,15 +29,8 @@
 
 .text {
   margin: 0;
-  line-height: 160%;
   font-weight: 400;
-}
-
-.meetImage {
-  position: relative;
-  width: 600px;
-  min-width: 600px;
-  height: 651px;
+  line-height: 140%;
 }
 
 .link {
@@ -63,22 +45,61 @@
   font-weight: 500;
 }
 
+.screenImage {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.blob {
+  position: absolute;
+  transform: rotate(-25deg);
+  width: 534px;
+  transform-origin: bottom;
+  z-index: -1;
+}
+
+.particlesContainer {
+  position: absolute;
+  width: 256px;
+  height: 554px;
+  left: 40%;
+  top: -8%;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 3rem;
+}
+
+.infoRow {
+  display: flex;
+  gap: 1.5rem;
+  align-items: end;
+}
+
 @media screen and (max-width: 1300px) {
   .content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-  }
-
-  .titleDecoration {
-    left: 16rem;
   }
 }
 
 @media screen and (max-width: 875px) {
+  .container {
+    margin-bottom: 2rem;
+  }
+
   .content {
     gap: 2rem;
     padding: 3rem var(--content-padding-h);
     font-size: 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
+    align-items: flex-start;
   }
 
   .textContainer {
@@ -89,24 +110,27 @@
     font-size: 1.5rem;
   }
 
-  .titleDecoration {
-    left: 10rem;
-    width: 2rem;
-    top: -2.5rem;
-    z-index: 1;
-  }
-
   .text {
     line-height: 140%;
   }
 
-  .meetImage {
-    width: 361px;
-    min-width: 361px;
-    height: 309px;
-  }
-
   .linkText {
     font-weight: 500;
+  }
+
+  .screenImage {
+    padding-left: 1rem;
+  }
+
+  .blob {
+    left: 6%;
+  }
+
+  .infoContainer {
+    gap: 1rem;
+  }
+
+  .infoRow {
+    gap: 1rem;
   }
 }

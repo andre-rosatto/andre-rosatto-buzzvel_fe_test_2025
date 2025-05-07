@@ -1,6 +1,12 @@
 import styles from './Card.module.css';
 
-export default function Card({ badgeType, title, text, linkHref = '#' }) {
+export default function Card({
+  badgeType,
+  title,
+  text,
+  linkHref = '#',
+  responsive = true,
+}) {
   const getBadge = () => {
     switch (badgeType) {
       case 'featured':
@@ -16,7 +22,9 @@ export default function Card({ badgeType, title, text, linkHref = '#' }) {
     badgeType[0].toLocaleUpperCase() + badgeType.slice(1);
 
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} ${!responsive ? styles.fixedSize : ''}`}
+    >
       <div className={styles.content}>
         <span className={`${styles.badge} ${getBadge()}`}>
           {getBadgeText()}
