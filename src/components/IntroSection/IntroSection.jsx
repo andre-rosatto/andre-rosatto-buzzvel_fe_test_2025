@@ -48,35 +48,30 @@ export default function IntroSection() {
                 width={25}
                 height={32}
                 alt='company 1'
-                style={{ width: 'auto', height: '32px' }}
               />
               <Image
                 src='/assets/company_icon_2.webp'
                 width={29}
                 height={32}
                 alt='company 2'
-                style={{ width: 'auto', height: '32px' }}
               />
               <Image
                 src='/assets/company_icon_3.webp'
                 width={32}
                 height={32}
                 alt='company 3'
-                style={{ width: 'auto', height: '32px' }}
               />
               <Image
                 src='/assets/company_icon_4.webp'
                 width={28}
                 height={32}
                 alt='company 4'
-                style={{ width: 'auto', height: '32px' }}
               />
               <Image
                 src='/assets/company_icon_5.webp'
                 width={33}
                 height={32}
                 alt='company 5'
-                style={{ width: 'auto', height: '32px' }}
               />
             </div>
           </div>
