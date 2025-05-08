@@ -1,7 +1,7 @@
 # Buzzvel Front-End Technical Challenge 2025: uteach website
 Nextjs website created as a Single Page Application for the education company uteach as part of Buzzvel's front-end technical challenge 2025.
 
-## Instalation / Initialization
+## Installation / Initialization
 ```npm install```: to install the required dependencies
 
 ```npm run dev```: to start the project in development mode. The website can then be accessed on ```localhost:3000```.
