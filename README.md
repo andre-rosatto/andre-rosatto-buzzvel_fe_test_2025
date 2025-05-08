@@ -1,40 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Buzzvel Front-End Technical Challenge 2025: uteach website
+Nextjs website created as a Single Page Application for the education company uteach as part of Buzzvel's front-end technical challenge 2025.
 
-## Getting Started
+## Instalation / Initialization
+```npm install```: to install the required dependencies
 
-First, run the development server:
+```npm run dev```: to start the project in development mode. The website can then be accessed on ```localhost:3000```.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Section components
+Each section is a component on its own. Although not absolutely necessary, this makes the code more manageable and readable. All section components can be identified by their suffix ```-Section```. Therefore, the section components, in the order they appear on the page, are:
+```IntroSection```, ```AppSection```, ```QuotesSection```, ```MeetSection```, ```CounterSection```, ```TestimonialsSection```, ```FeaturesSection```, ```JoinSection```, and ```MessageSection```.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Other components
+### Card
+This component is a small card element showing a badge, a title, some text and a 'Take Lesson' button.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Props:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```badgeType``` [string]: this determines the style of the badge, as well as its text. Possible values are ```featured```, ```popular```, and ```new```. The values are case-sensitive. The badge shows a capitalized version of this prop. Other values are still shown and capitalized, but will be styled as ```new```.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```title``` [string]: the title at the top of the card.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text``` [string]: the text in the card.
 
-## Learn More
+```linkHref``` [string]: the URL where clicking the button will takes. Default value is ```#```.
 
-To learn more about Next.js, take a look at the following resources:
+```responsive``` [boolean]: determines if the card with shrink for smaller screens. Default value is ```true```.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### CounterCard
+This component shows counting information, with an icon, a number, a subtitle.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Props:
 
-## Deploy on Vercel
+```icon``` [HTMLElement]: any HTML Element to be shown as the icon. In this project, SVGs were used.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```value``` [string]: the text representing the accounted number. A string is used so that values such as '1M' or formatted values such as '1.000,00' can be used.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+```text``` [string]: the subtitle shown under the number, explaining what the value refers to.
+
+### Fader
+This component is responsible for the fade in/slide in animation when it enters the viewport. Children elements will be animated.
+
+Props:
+
+```from``` [string]: the direction where the slide in starts from. Possible values are ```left``` and ```right```. Default value is ```right```.
+
+### Footer
+The footer component at the bottom of the page. This components only organizes and manages the footer element. There are no props.
+
+### Navbar
+The navigation bar at the top of the page. This component only organizes and manages the navigation bar. It automatically collapses its contents into a burger menu for small screens. There are no props.
+
+### SliderCard
+The cards used in the slider section. This component was used in the ```TestimonialsSection```.
+
+Props:
+
+```text``` [string]: the text on the card. In this project, it contains a testimonial.
+
+```image``` [string]: the URL of the image to be shown. In this project, it shows a picture of the testimonial's author.
+
+```author``` [string]: the name of the testimonial's author.
+
+```occupation``` [string]: the text to be shown as the author's occupation.
+
+### UnderlinedText
+This is the underlined text shown in many of this project's titles. In this project, this component was used to inside ```<h2>``` tags to underline part of the text.
+
+Props:
+
+```text``` [string]: The text to be underlined.
